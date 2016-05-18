@@ -51,13 +51,17 @@
 				          <label for="ip_address" style="font-size: 15px;">IP Address</label>
 				        </div>
 				      </div>
-				      <div class="row">
-				        <div class="input-field col s12">
-				          <i class="material-icons prefix">mode_edit</i>
-				          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-				          <label for="icon_prefix2">First Name</label>
-				        </div>
-				      </div>
+			        	<div class="row">
+						    <div class="col s12">
+						      <div class="row">
+						        <div class="input-field col s12">
+						          <i class="material-icons prefix">mode_edit</i>
+						          <textarea name="info" style="font-size: 15px;" id="icon_prefix2" class="materialize-textarea"></textarea>
+						          <label for="icon_prefix2" style="font-size: 15px;">Info</label>
+						        </div>
+						      </div>
+						    </div>
+						</div>
 				      <div class="row">
 				        <div class="input-field col s6">
 				          <button class="btn waves-effect waves-light" type="submit" name="action">Submit

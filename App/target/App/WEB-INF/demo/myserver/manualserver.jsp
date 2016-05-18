@@ -8,6 +8,7 @@
   
   <jsp:include page="../../loaders/file-loader.jsp" />
   
+  <link rel="stylesheet" href="resources/font-awesome-4.6.3/css/font-awesome.min.css">
   
     <script>
     $( document ).ready(function() {
@@ -23,10 +24,22 @@
 	<jsp:include page="../../partial-files/header.jsp" />
 	
 	<div class="container">
-		<br/><br/>
+		<br/>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="bs-example">
+				    <div class="alert alert-info fade in">
+				        <a href="#" class="close" data-dismiss="alert">&times;</a>
+				        <strong>Note!</strong> If you start the following configured manual server then it quick switched, So be care <i style="font-size: 20px;" class="fa fa-smile-o" aria-hidden="true"></i>
+				    </div>
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
 		<div class="row">
 			<div class="col-sm-3">
-				<img alt="" src="resources/images/serverlogo.jpg" style="height:200px;weight:200px;">
+				<img alt="" src="resources/images/servertool.jpg" style="height:300px;weight:300px;">
 			</div>
 			<div class="col-sm-6 z-depth-5">
 				<div class="row">
@@ -52,8 +65,19 @@
 				        </div>
 				      </div>
 				      <div class="row">
+						    <div class="col s12">
+						      <div class="row">
+						        <div class="input-field col s12">
+						          <i class="material-icons prefix">mode_edit</i>
+						          <textarea name="info" style="font-size: 15px;" id="icon_prefix2" class="materialize-textarea"></textarea>
+						          <label for="icon_prefix2" style="font-size: 15px;">Info</label>
+						        </div>
+						      </div>
+						    </div>
+						</div>
+				      <div class="row">
 				        <div class="input-field col s6">
-				          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+				          <button class="btn waves-effect waves-light" type="submit" name="action">Start
 						    <i class="material-icons right">send</i>
 						  </button>
 						  <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>reset</a>
@@ -67,19 +91,6 @@
 			</div>
 			<div class="col-sm-3">
 			</div>
-		</div>
-		<br/>
-		<div class="row">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-6">
-				<div class="bs-example">
-				    <div class="alert alert-info fade in">
-				        <a href="#" class="close" data-dismiss="alert">&times;</a>
-				        <strong>Note!</strong> This server will active if Admin approved otherwise it only registered in our database ! 
-				    </div>
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
 		</div>
 	</div>
 </body>

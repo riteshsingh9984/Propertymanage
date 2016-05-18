@@ -5,11 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>MyServer Create</title>
-  
   <jsp:include page="../../loaders/file-loader.jsp" />
-  
-  
-   
 </head>
 <body style="background-image: url('resources/images/server.jpg')">
 	
@@ -43,7 +39,6 @@
 	</div>
 </body>
 </html>
-
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" />
 <script>
@@ -105,12 +100,12 @@
 	
 	
 	function sh(str){
-		alert(str);
+		
         $.ajax({url: "upserver?serverId="+str, success: function(result){
             
         	var array = result.split(",");
         	
-        	$("#div1").html("serverID= "+array[0]+"status= "+array[1]);
+        	/* $("#div1").html("serverID= "+array[0]+"status= "+array[1]); */
         	
             if(array[1] == 1){
             	$("#"+array[0]).removeClass(' glyphicon glyphicon-thumbs-down');
